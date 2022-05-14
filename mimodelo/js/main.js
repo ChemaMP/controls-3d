@@ -41,7 +41,7 @@ function init() {
     // ASCII file
 
     const loader = new STLLoader();
-    loader.load( '../src/Tomioka_Giyuu.stl', function ( geometry ) {
+    loader.load( './src/Tomioka_Giyuu.stl', function ( geometry ) {
 
         const material = new THREE.MeshPhongMaterial( { color: 0x43ff65, specular: 0x111111, shininess: 200 } );
         const mesh = new THREE.Mesh( geometry, material );
